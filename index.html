@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>大提琴考試準備</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap">
+  <div class="brand">🎻 CJMEA 2027 大提琴考試準備</div>
+  <nav>
+    <a class="on" href="index.html">總覽</a>
+    <a href="requirements.html">考試內容</a>
+    <a href="solo.html">Solo 解析與影片</a>
+    <a href="plan.html">練習計畫</a>
+    <a href="log.html">每週紀錄</a>
+  </nav>
+</div></header>
+
+<main class="wrap">
+  <h1>CJMEA Intermediate Region Orchestra 大提琴考試</h1>
+
+  <div class="card">
+    <div class="muted">距離考試還有</div>
+    <div class="countdown" id="cd">— 天</div>
+    <div>2027/1/30（六）｜Community Middle School, 95 Grovers Mill Rd, Plainsboro, NJ</div>
+    <div class="muted">報名狀態：✅ 已完成報名</div>
+  </div>
+
+  <h2>考試三大項目</h2>
+  <div class="table-scroll"><table>
+    <tr><th>項目</th><th>內容</th></tr>
+    <tr><td>1. 音階</td><td>9 個大調音階，背譜、不用 vibrato，由評審抽考；分弓與連弓皆 ♩=104</td></tr>
+    <tr><td>2. Solo</td><td>W. H. Squire《Bourrée》Op. 24，全曲，<strong>Carl Fischer 版</strong></td></tr>
+    <tr><td>3. 視奏</td><td>現場提供短譜</td></tr>
+  </table></div>
+
+  <h2>各頁內容</h2>
+  <div class="grid">
+    <a class="card" href="requirements.html"><strong>考試內容</strong><br>音階表、速度與弓法規定、官方資料來源</a>
+    <a class="card" href="solo.html"><strong>Solo 解析與影片</strong><br>曲子背景、演奏重點、YouTube 示範</a>
+    <a class="card" href="plan.html"><strong>練習計畫</strong><br>10 週進度、每天 1 小時分配、常見扣分點</a>
+    <a class="card" href="log.html"><strong>每週紀錄</strong><br>練習紀錄格式，每週回報與調整</a>
+  </div>
+</main>
+
+<footer><div class="wrap">資料依據 CJMEA 2026-2027 Intermediate Audition Requirements 整理，最新規定請以 <a href="https://www.cjmea.org/int-band-orch-perc-auditions">CJMEA 官網</a> 與 NJMEA.org 為準。</div></footer>
+
+<script>
+(function(){
+  var exam = new Date(2027,0,30);
+  var now = new Date(); now.setHours(0,0,0,0);
+  var d = Math.round((exam - now)/86400000);
+  document.getElementById('cd').textContent = d > 0 ? d + ' 天' : (d === 0 ? '就是今天！加油！' : '考試已結束');
+})();
+</script>
+</body>
+</html>
